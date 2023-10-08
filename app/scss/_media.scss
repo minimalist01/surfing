@@ -1,0 +1,413 @@
+@media (max-width: 1440px) {
+    .logo {
+        img {
+            width: 92px;
+        }
+    }
+    .header__title {
+        font-size: 130px;
+        line-height: 108px;
+        top: 20px;
+        left: 60px;
+    }
+    .menu {
+        padding-top: 10px;
+    }
+    .header__search {
+        padding-bottom: 8px;
+    }
+    .header__date {
+        font-size: 60px;
+        span {
+            font-size: 14px;
+            padding-top: 0;
+            margin-bottom: 5px;
+        }
+    }
+    .header__arrows {
+        left: 150px;
+        bottom: 40px;
+    }
+    .shop__extras-inner {
+        display: block;
+    }
+    .shop__extras-title,
+    .shop__extras-name,
+    .shop__extras-price  {
+        text-align: left;
+    }
+    .surfboard-box__content {
+        padding-left: 0;
+        width: 150px;
+        top: -60px;
+        &::before {
+            display: none;
+        }
+    }
+    .surfboard__position--3 .surfboard-box__content {
+        padding-right: 0;
+        left: 40px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .header__aside {
+        height: 100px;
+        padding-right: 25px;
+        background-color: rgba(#fff, .1);
+        text-align: left;
+        color: #fff;
+        display: flex;
+    }
+    .menu {
+        padding-top: 0;
+    }
+    .menu__list {
+        text-align: center;
+        li {
+            display: inline-block;
+        }
+        a {
+            padding: 15px;
+        }
+    }
+    .header__search {
+        padding: 33px 15px 15px;
+    }
+    .header__date {
+        padding: 15px;
+    }
+    .header__location {
+        margin-top: 42px;
+    } 
+    .slider__item__info-title {
+        font-size: 65px;
+        line-height: 32px;
+    }
+    .header__arrows {
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .header__map {
+        svg {
+            width: 500px;
+            height: 250px;
+        }
+    }
+    .slider-arrows {
+        top: 20px;
+        right: 20px;
+    }
+    .slider-arrows__left {
+        right: 60px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .travel {
+        background-position:  right 900px;
+    }
+    .travel-slider__descr {
+        padding-left: 20px;
+    }
+    .travel-slider__info-item,
+    .sleep-slider__info-item {
+        margin-bottom: 20px;
+        min-height: auto;
+        padding-left: 20px;
+    }
+    .travel-slider__info-subtitle,
+    .sleep-slider__info-subtitle {
+        transform: rotate(0);
+        height: auto;
+        position: static;
+    }
+    .travel-slider__info-title,
+    .sleep-slider__info-title {
+        padding: 0;
+    }
+    .travel-slider__info,
+    .sleep-slider__info {
+        display: block;
+    }
+    .info-item-span {
+        text-align: left;
+    }
+    .travel-slider__descr {
+        background-position: right -120px;
+    }
+    .travel-slider__subtitle,
+    .sleep-slider__subtitle {
+        padding: 0;
+        text-align: right;
+    }
+    .sleep-slider__descr .descr__head .sleep__star-list {
+        top: 35px;
+        left: 10px;
+    }
+    .quantity-button.quantity-down {
+        left: 225px;
+        top: 10px;
+    }
+    .quantity-button.quantity-up {
+        left: 270px;
+        top: 10px;
+    }
+
+    .travel-slider__info-title .sleep-pricing__span, .sleep-slider__info-title .sleep-pricing__span {
+        top: 58px;
+        left: 140px;
+    }
+
+    .shop__slider-content,
+    .shop__extras {
+        padding-left: 40px;
+    }
+    .shop__slider {
+        padding-left: 20px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .slider-map {
+        max-width: 1000px;
+        min-height: 500px;
+        background: url(../img/world-map.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    
+        .slider-dots {
+            min-height: 500px;
+        }
+}
+}
+
+@media (max-width: 1140px) {
+
+}
+
+@media (max-width: 1040px ) {
+    .header__arrows {
+        display: none;
+    }
+
+    .surf__subtitle {
+        padding-right: 10px;
+    }
+
+    .menu {
+        background-color: #000;
+        z-index: 22;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+        transition: all .5s;
+        &.active {
+            transform: translateX(0);
+        }
+    }
+    .header__search {
+        padding: 40px 15px 15px;
+    }
+    .slider__item__info {
+        position: absolute;
+        right: 20px;
+        bottom: 17px;
+        text-align: right;
+        margin-bottom: 0;
+    }
+    .slider__item__info-text {
+        font-size: 30px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .subtitle-left {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        &::before {
+            width: 50px;
+        }
+    }
+    .slider__item__info-subtext {
+        margin-bottom: 5px;
+    }
+    .slider__item__info-title {
+        font-size: 55px;
+        line-height: 55px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .slider-dotshead {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 5px; 
+    }
+    
+    .dots-box {
+         width: 125px;
+    }
+
+    .dots-box__number {
+        font-size: 18px;
+    }
+    .dots-box__name {
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .slider-map {
+    display: none;
+    }
+}
+@media (max-width: 880px) {
+    .sleep {
+        background-position: right 1200px;
+    }
+    .sleep-slider__descr {
+        background: none !important;
+    }
+    .sleep-slider__descr .descr__head {
+        padding-right: 0;
+    }
+    .sleep-slider__descr {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 810px) {
+    .shop__slider-content, .shop__extras {
+        padding-left: 20px;
+    }
+    .shop__slider-info {
+        margin: 0;
+    }
+
+    .shop__slider-content, .shop__extras {
+        display: block;
+    }
+    .shop__extras-inner {
+        display: flex;
+    }
+    .shop__slider-info {
+        display: block;
+    }
+    .shop__slider-inner {
+        display: block;
+    }
+    .shop__extras-title, .shop__extras-name, .shop__extras-price {
+        text-align: center;
+    }
+    .shop__extras-inner {
+        justify-content: space-around;
+    }
+    .surfboard {
+        margin: 20px 0;
+        img {
+            min-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-dotshead {
+        display: none;
+    }
+
+    .title {
+        span {
+            // display: none;
+            font-size: 100px;
+        }
+        h3 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .travel-slider__descr {
+        background: none !important;
+    }
+}
+
+@media (max-width: 574px) {
+    .title {
+        display: none;
+    }
+    .sleep {
+        background-image: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .travel {
+        background-image: none;
+    }
+    .header__aside {
+        display: block;
+        text-align: center;
+        height: 100vh;
+        background-color: transparent;
+        border: none;
+    }
+    .header__search {
+        padding: 15px 0 5px;
+    }
+    .header__date {
+        padding: 0;
+        font-size: 50px;
+        line-height: 45px;
+        span { 
+            font-size: 12px;
+        }
+    }
+    .header__location {
+        margin-top: 0;
+    }
+    .header__title {
+        display: none;
+    }
+    .sleep-slider__descr .descr__head .sleep__star-list {
+        top: 77px;
+    }
+    .quantity-button.quantity-down {
+        left: 200px;
+        top: 10px;
+    }
+    .quantity-button.quantity-up {
+        left: 245px;
+        top: 10px;
+    }
+    .shop__extras-inner {
+        display: block;
+        text-align: left;
+    }
+    .shop__extras-title, .shop__extras-name, .shop__extras-price {
+        text-align: left;
+    }
+
+
+}
+
+@media (min-width: 1040px) {
+    .menu-btn {
+        display: none;
+    }
+}

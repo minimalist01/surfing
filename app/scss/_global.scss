@@ -1,0 +1,203 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+a { 
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.subtitle-left {
+    font-size: 22px;
+    line-height: 32px; /* 145.455% */
+    font-weight: 700;
+    letter-spacing: 7.333px;
+    opacity: 0.5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }
+}
+
+.subtitle-right {
+    font-size: 22px;
+    line-height: 32px; /* 145.455% */
+    font-weight: 700;
+    letter-spacing: 7.333px;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
+
+.title {
+    div {
+        position: relative;
+        font-size: 200px;
+        font-weight: 800;
+        color: rgba(#fff, .1);
+        transform: translateX(-50px);
+        display: inline-block;   
+    }
+    span {
+        display: inline-block;
+    }
+    h3 {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        font-size: 80px;
+        margin: 0;
+        color: #fff;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: #4AF6CD;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 8px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+.surf,
+.travel,
+.sleep {
+    padding: 160px 0px 120px;
+}
+
+.travel,
+.sleep {
+    padding-bottom: 265px;
+}
+
+.descr {
+    display: inline-block;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+// Calculator
+
+.quantity {
+    display: inline-block;    
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    width: 45px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 45px;
+
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    right: 0;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    right: 35px;
+  }
